@@ -2,6 +2,11 @@
   include_role:
     name: common
     tasks_from: app-setup
+
+- name: nodejs setup
+  include_role:
+      name: common
+      tasks_from: nodejs
   # - name: disable default nodejs
   #   command: dnf module disable nodejs -y
 
